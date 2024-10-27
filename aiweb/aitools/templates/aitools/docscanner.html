@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Document scanner</h1>
+
+    {% url 'aitools:documentscanner' %}
+
+    {% for user in users %}
+        {{ user.first_name }}
+    {% endfor %}
+{% endblock %}
